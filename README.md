@@ -62,3 +62,6 @@ Note: Fork() is used to create multiclient environment.
 	$ cd FTP-Client
 	$ make
 	$ ./ftpclient 127.0.0.1
+
+# Author
+Fahad Patel - @ https://github.com/Fahadjr 
