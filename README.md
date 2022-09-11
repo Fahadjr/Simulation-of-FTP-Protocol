@@ -14,15 +14,15 @@ Note: Fork() is used to create multiclient environment.
 
 **Implemented commands are**
 	
-	1.  USER – This command sends the user identification to the server.
-	2.  CWD  – This command allows the user to change the current working directory to the path specified with the  command.PASS – This command sends the user password to the server.
-	3.  CDUP - The CWD command is issued to change the client’s current working directory to the path specified with the command. FTP Voyager and other GUI-based FTP clients will      automatically issue these commands as the user browses the remote file system from within the program.
-	4. REIN - This command Reinitialize Session between Systems  
-	5. QUIT – This command terminates a USER and if file transfer is not in progress, the server closes the connection. 
-	6. PORT - The PORT command is issued by the client to initiate a data connection required to transfer data (such as directory listings or files) between the client and server. The PORT command is used during "active" mode transfers.  
-	7. RETR – This command send the requested file over the data connection.
-	8. STOR – This command causes to store a file into the current directory of the remote host.
-	9. APPE - A client issue the APPE command after successfully establishing a data connection when it wishes to upload data to the server. The client provides the file name it wishes to use for the upload. If the file already exists on the server, the data is appended to the existing file. If the file does not exist, it is created.
+	1.USER – This command sends the user identification to the server.
+	2.CWD  – This command allows the user to change the current working directory to the path specified with the  command.PASS – This command sends the user password to the server.
+	3.CDUP - The CWD command is issued to change the client’s current working directory to the path specified with the command. FTP Voyager and other GUI-based FTP clients will      automatically issue these commands as the user browses the remote file system from within the program.
+	4.REIN - This command Reinitialize Session between Systems  
+	5.QUIT – This command terminates a USER and if file transfer is not in progress, the server closes the connection. 
+	6.PORT - The PORT command is issued by the client to initiate a data connection required to transfer data (such as directory listings or files) between the client and server. The PORT command is used during "active" mode transfers.  
+	7.RETR – This command send the requested file over the data connection.
+	8.STOR – This command causes to store a file into the current directory of the remote host.
+	9.APPE - A client issue the APPE command after successfully establishing a data connection when it wishes to upload data to the server. The client provides the file name it wishes to use for the upload. If the file already exists on the server, the data is appended to the existing file. If the file does not exist, it is created.
 	10.REST - The REST command is used to specify a marker to the server for the purposes of resuming a file transfer . Issuing the REST command does not actually initiate the transfer. After issuing a REST command, the client must send the appropriate FTP command to transfer the file. The server will use the marker specified in the REST command to resume file transfer at the specified point.
 	11.RNFR - The RNFR command is issued when an FTP client wants to rename a file on the server. The client specifies the name of the file to be renamed along with the command. After issuing an RNFR command, an RNTO command must immediately follow.
 	12.RNTO - The RNTO command is used to specify the new name of a file specified in a preceding RNFR (Rename From) command.
